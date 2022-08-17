@@ -1,1 +1,1 @@
-# corrigir_debitos
+Esse projeto faz a correção de vários débitos em relação a inflação ocorrida em um determinado período de forma automatizada, sendo o índice utilizado para a correção definido pelo usuário antes da inicialização.
