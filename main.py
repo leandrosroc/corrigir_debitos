@@ -11,13 +11,15 @@ warnings.filterwarnings('ignore')
 
 chrome_options = Options()
 chrome_options.add_argument('--headless')
-Chromedriver = "chromedriver.exe"
+
+#versão mais nova não precisa
+#Chromedriver = "chromedriver.exe"
 
 #chrome invisivel
-driver = webdriver.Chrome(options=chrome_options, executable_path = Chromedriver)
+#driver = webdriver.Chrome(options=chrome_options)
 
 #Abre o chrome visivel
-#driver = webdriver.Chrome(executable_path = Chromedriver)
+driver = webdriver.Chrome()
 
 caminhoBase = "arquivosBase/baseExemplo.csv"
 df = pd.read_csv("{}".format(caminhoBase), converters={'cnpj': lambda x: str(x)}, on_bad_lines='skip', sep=";", encoding="utf-8")
